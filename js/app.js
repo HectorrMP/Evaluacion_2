@@ -29,3 +29,13 @@ form.addEventListener("submit", e=>{
         parrafo.innerHTML = "Enviado"
     }
 })
+
+
+$(document).ready(function(){
+    $('#carrusel').slick({
+        autoplay: true,  // Si queremos que el carrusel se mueva automáticamente
+        autoplaySpeed: 2000,  // Velocidad en milisegundos de cada imagen
+        dots: true,  // Si queremos que aparezcan los puntos de navegación debajo del carrusel
+        arrows: true  // Si queremos que aparezcan las flechas de navegación en los extremos del carrusel
+    });
+});

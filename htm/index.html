@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Página Alexander</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>GrupoCero</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/estiloCarrusel.css" />
+    <script type="text/javascript" src="/js/carrusel.js"></script>
+    
+   
+
+
 </head>
 <body>
     <header>
         <div class="contenedor">
             <nav class="menu">
                 <a class="inicio-link" href="#">Inicio</a>
-                <a class="nav-link" href="/SobreNosotros.html">Sobre Nosotros</a>
+                <a class="nav-link" href="/htm/SobreNosotros.html">Sobre Nosotros</a>
                 
                 
-                <a class="contacto-link" href="#">Contacto</a>
-                <a class="inicioSe-link" href="/InicioSesion.html">Inicio sesion</a>
+                <a class="contacto-link" href="id=LlamoContacto">Contacto</a>
+                <a class="inicioSe-link" href="/htm/InicioSesion.html">Inicio Sesion</a>
             </nav>
             <div class="contenido-header">
-                <h1 class="titulo-header">Grupo Zero </h1>
+                <h1 class="titulo-header">Grupo Cero </h1>
                 <span class="linea-header"></span>
                 <h2 class="texto-header">Lorem ipsum, dolor sit amet consectetur <span class="desaparecer">adipisicing elit. Nobis esse odit commodi, ipsa optio quos!</span></h2>
-                <a href="" class="action-header">Call to action</a>
+                <a href="/htm/NuestrasObras.html" class="action-header">Exposición  </a>
             </div>
         </div>
     </header>
@@ -30,10 +38,17 @@
         <section class="quienes">
            <div class="contenedor">
                <h3 class="quienes-titulo">Simple & puro diseño</h3>
-               <p class="quienes-parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quia recusandae dolor cum, eveniet voluptate itaque
-                voluptatibus iure perspiciatis sequi quisquam inventore. Necessitatibus quasi voluptatem iusto, ea suscipit blanditiis
-                ab architecto, eveniet autem dolore fugiat laborum optio dicta in. Eligendi harum repellendus amet provident placeat quas
-                distinctio neque dolores magni!</p>
+
+               <div id="carrusel">
+                 <div class=".carousel">
+                    <ul>
+                      <li><img class="imagen-achicada" src="/img/AnaMaria1.jpg"></li>
+                      <li><img class="imagen-achicada" src="/img/AngelaL.jpg"></li>
+                      <li><img class="imagen-achicada" src="/img/BraulioD.jpg"></li>
+                      <li><img class="imagen-achicada" src="/img/FotoAndrea1.jpg"></li>
+                      <li><img class="imagen-achicada" src="/img/LuzB.jpg"></li>
+                    </ul>
+                    </div>
             </div> 
         </section>
         <section class="quehacemos">
@@ -66,27 +81,33 @@
         <section class="portafolio">
             <div class="contenedor">
                 <div class="portafolio-textos">
-                    <h2>Haz de tu trabajo algo extraordinario</h2>
-                    <p>Contactame si estás preparado</p>
+                    <h2>Exposición Grupo Cero</h2>
+                    <p>Todas de nuestras Obras las puedes encontrar aquí</p>
                 </div>
                 <section class="galeria">
                     <div class="fotos">
-                        <img src="img/1.jpg" alt="">
+                        <a class="Foto1" href="/htm/fotoAndrea.html"> <img src="/img/FotoAndrea1.jpg" alt=""></a>
+                        <h3 class="titulo-Galeria"> Andrea Carreño </h3>
                     </div>
                      <div class="fotos">
-                        <img src="img/2.jpg" alt="">
+                        <a class="Foto2" href="/htm/fotoAnaMaria.html"><img src="/img/AnaMaria1.jpg" alt=""></a>
+                        <h3 class="titulo-Galeria"> Ana María Benadevide  </h3> 
                     </div>
                     <div class="fotos">
-                        <img src="img/3.jpg" alt="">
+                        <a class="Foto3" href="/htm/fotoAngela.html"><img src="/img/AngelaL.jpg" alt=""></a>
+                        <h3 class="titulo-Galeria"> Angela Label   </h3>  
                     </div>
                     <div class="fotos">
-                        <img src="img/4.jpg" alt="">
+                        <a class="Foto4" href="/htm/fotoBraulioD.html"><img src="/img/BraulioD.jpg" alt=""></a> 
+                        <h3 class="titulo-Galeria"> Braulio Delgado </h3> 
                     </div>
                     <div class="fotos">
-                        <img src="img/5.jpg" alt="">
+                        <a class="Foto5" href="/htm/fotoFrancisco.html"><img src="/img/FranciscoS.jpg" alt=""></a> 
+                        <h3 class="titulo-Galeria"> Francisco Salas </h3> 
                     </div>
                     <div class="fotos">
-                        <img src="img/6.jpg" alt="">
+                        <a class="Foto6" href="/htm/fotoLuzB.html"><img src="/img/LuzB.jpg" alt=""></a> 
+                        <h3 class="titulo-Galeria"> Luz Benavente </h3> 
                     </div>
                 </section>
             </div>
@@ -96,8 +117,11 @@
         <section class="contacto">
             <div class="contenedor">
                 <div class="footer-textos">
-                    <h2>Contacta con nosostros</h2>
-                    <p>Lorem, ipsum dolor.</p>
+                    <h2>¡ Escribenos ! </h2>
+                    <p>Te Contactaremos Muy Pronto</p>
+                </div>
+                <div id="LlamoContacto">
+
                 </div>
                 <form action="" class="formulario" method="POST">
                     <input type="text" placeholder="Nombre" id="nombre" name="nombre" required value="">
@@ -109,6 +133,7 @@
                 </form>
             </div>
         </section>
+        
     </footer>
 </body>
 </html>
